@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alps & Akire</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+    <!-- <link
+    href="css/bootstrap.min.css"
+    rel="stylesheet"
+    /> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- GSAP -->
+    <script src="js/gsap/gsap.min.js"></script>
+    <!-- GSAP PLUGINS -->
+    <script src="js/gsap/ScrollTrigger.min.js"></script>
+    <script src="js/gsap/ScrollSmoother.min.js"></script>
+    <script src="js/gsap/ScrollToPlugin.min.js"></script>
+    <link rel="stylesheet" href="css/particles.css" />
+</head>
+<body>
+    <div class="purple-background"></div>
+    <div class="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+    <div class="butterflies1">
+        <img src="assets/images/butterflies1.png" alt="butterflies1" class="img-fluid">
+    </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section id="hero">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <!-- <div class="w-100 h-100 p-3"> -->
+                                <div class="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="header-container">
+                                        <div class="heading1">
+                                            <img src="assets/images/heading1.png" alt="Akire & Alps" class="img-fluid">
+                                        </div>
+                                        <div class="heading2">
+                                            <img src="assets/images/heading2.png" alt="Save the Date" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="circle-container">
+                                        <div class="circle">
+                                            <img src="assets/images/circle.png" alt="circle" class="img-fluid">
+                                        </div>
+                                        <div class="ring position-absolute">
+                                            <img src="assets/images/ring.png" alt="ring" class="img-fluid">
+                                        </div>
+                                        <div class="alps-container position-absolute">
+                                            <img src="assets/images/alps.png" alt="alps" class="img-fluid">
+                                        </div>
+                                        <div class="ampersand position-absolute">
+                                            <img src="assets/images/ampersand.png" alt="ampersand" class="img-fluid">
+                                        </div>
+                                        <div class="akire-container position-absolute">
+                                            <img src="assets/images/akire.png" alt="akire" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="footer-container">
+                                        <div class="date">
+                                            <img src="assets/images/date.png" alt="date" class="img-fluid">
+                                        </div>
+                                        <div class="footer1">
+                                            <img src="assets/images/footer1.png" alt="footer1" class="img-fluid">
+                                        </div>
+                                        <div class="footer2">
+                                            <img src="assets/images/footer2.png" alt="footer2" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="guest">
+                <div class="container-fluid h-100">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div class="col-12">
+                                <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="guest-content">
+                                        <div class="guest-copy1 marcellus-font-xl text-uppercase text-center light-blue mx-auto">
+                                            <p class="guest-copy1-1">With love.</p>
+                                            <p class="guest-copy1-2">we celebrate with...</p>
+                                        </div>
+                                        <div class="guest-copies guest-copy2 text-uppercase text-center dark-blue mx-auto">
+                                            <p class="guest-copy2-1 marcellus-font-lg text-decoration-underline">Principal Sponsors / Godparents</p>
+                                            <p class="guest-copy2-2 marcellus-font-sm">Architect Maria Belinda T. Francisco</p>
+                                            <p class="guest-copy2-1 marcellus-font-sm">Architect Maria Belinda T. Francisco</p>
+                                            <p class="guest-copy2-3 marcellus-font-sm">Imelda B. Silva</p>
+                                            <p class="guest-copy2-4 marcellus-font-sm">Roberto L. Silva</p>
+                                        </div>
+                                        <div class="guest-copies guest-copy3 text-uppercase text-center dark-blue">
+                                            <p class="guest-copy3-1 marcellus-font-lg text-decoration-underline">From the Groom's Family</p>
+                                            <p class="guest-copy3-1 marcellus-font-sm">Marie Lousse Gega</p>
+                                        </div>
+
+                                        <div class="guest-copies guest-copy4 text-uppercase text-center dark-blue">
+                                            <p class="guest-copy4-1 marcellus-font-lg text-decoration-underline">From the Bride's Family</p>
+                                            <p class="guest-copy4-2 marcellus-font-sm">Ernesto Jose Violan</p>
+                                            <p class="guest-copy4-3 marcellus-font-sm">Erick Violan & Maica Laroza</p>
+                                        </div>
+                                        
+                                        <div class="guest-copies guest-copy4 text-uppercase text-center dark-blue">
+                                            <p class="guest-copy4-1 marcellus-font-lg text-decoration-underline">From the Bride's Family</p>
+                                            <p class="guest-copy4-2 marcellus-font-sm">Ernesto Jose Violan</p>
+                                            <p class="guest-copy4-3 marcellus-font-sm">Erick Violan & Maica Laroza</p>
+                                        </div>
+                                        
+                                        <div class="guest-copies guest-copy5 text-uppercase text-center dark-blue">
+                                            <p class="guest-copy5-1 marcellus-font-lg text-decoration-underline">Groom & bride's spiritual Family</p>
+                                            <p class="guest-copy5-2 marcellus-font-sm">Renn Alvarez & Annie Alvarez</p>
+                                        </div>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- <div class="guide">
+                <img src="assets/images/1.png" alt="hero-img" class="img-fluid">
+            </div> -->
+        </div>
+    </div>
+    <div class="border-container">
+        <div class="border-ul position-absolute">
+            <img src="assets/images/border-ul.png" alt="border-ul" class="img-fluid">
+        </div>
+        <div class="border-ur position-absolute">
+            <img src="assets/images/border-ur.png" alt="border-ur" class="img-fluid">
+        </div>
+        <div class="border-lr position-absolute">
+            <img src="assets/images/border-lr.png" alt="border-lr" class="img-fluid">
+        </div>
+        <div class="border-ll position-absolute">
+            <img src="assets/images/border-ll.png" alt="border-ll" class="img-fluid">
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>

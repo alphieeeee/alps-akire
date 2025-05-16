@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'Marcellus';
+    src: url('../assets/fonts/Marcellus-Regular.woff2') format('woff2'),
+         url('../assets/fonts/Marcellus-Regular.woff') format('woff'),
+         url('../assets/fonts/Marcellus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: 'Marcellus', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #c9e4f7;
+  color: #333;
+  min-height: 100%;
+  height: 100%;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#hero, #guest {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.border-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.border-ul {
+  max-width: 534px;
+  width: 28%;
+  top: 0%;
+  left: 0%;
+}
+
+.border-ur {
+  max-width: 475px;
+  width: 25%;
+  top: 0%;
+  right: 18%;
+}
+
+.border-lr {
+  max-width: 253px;
+  width: 14%;
+  bottom: 5%;
+  right: 0%;
+}
+
+.border-ll {
+  max-width: 313px;
+  width: 17%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.purple-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/purple.png") no-repeat center center;
+  background-size: cover;
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+}
+
+.circle {
+  width: calc((857/1920) * 100vw);
+}
+
+.ring {
+  /* width: calc((182/1920) * 100vw); */
+  max-width: 182px;
+  width: 22%;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0%);
+}
+.alps-container {
+  /* width: calc((202/1920) * 100vw); */
+  max-width: 202px;
+  width: 24%;
+  left: 30.5%;
+  top: 40.5%;
+}
+.ampersand {
+  /* width: calc((51/1920) * 100vw); */
+  max-width: 51px;
+  width: 6%;
+  left: 51%;
+  top: 48.5%;
+  transform: translate(-50%, -50%);
+}
+.akire-container {
+  /* width: calc((240/1920) * 100vw); */
+  width: 28%;
+  left: 52%;
+  top: 26%;
+}
+.heading1 {
+  width: calc((470/1920) * 100vw);
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.heading2 {
+  width: calc((379/1920) * 100vw);
+  /* margin-bottom: 2rem; */
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.date {
+  width: calc((455/1920) * 100vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer1 {
+  width: calc((512/1920) * 100vw);
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.footer2 {
+  width: calc((494/1920) * 100vw);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.butterflies1 {
+  position: fixed;
+  max-width: 850px;
+  width: 45%;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.guide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.5;
+  display: none;
+}
+
+.guest-content {
+  max-width: 813px;
+  width: 100%;
+}
+.guest-copy1 {
+  letter-spacing: 4px;
+  margin-bottom: calc((24/16) * 1rem);
+}
+.guest-copy1 p {
+  margin-bottom: 0;
+}
+.guest-copies {
+  margin-bottom: calc((24/16) * 1rem);
+}
+.guest-copies p:first-of-type {
+  letter-spacing: 8px;
+  margin-bottom: 1rem;
+}
+.guest-copies p:not(:first-of-type) {
+  margin-bottom: 0;
+  letter-spacing: 4px;
+}
+.light-blue {
+  color: #2454a8;
+}
+.dark-blue {
+  color: #283d7c;
+}
+
+.logo {
+  max-width: 280px;
+  width: 15%;
+}
+
+h1, h2, h3, h4, h5, h6,
+.heading1, .heading2,
+.date, .footer1, .footer2 {
+    font-family: 'Marcellus', Arial, sans-serif;
+}
+
+.marcellus-font {
+    font-family: 'Marcellus', Arial, sans-serif;
+}
+
+.marcellus-font-sm {
+    font-family: 'Marcellus', Arial, sans-serif;
+    font-size: calc((16/1920) * 100vw);
+}
+
+.marcellus-font-md {
+    font-family: 'Marcellus', Arial, sans-serif;
+    font-size: calc((18/1920) * 100vw);
+}
+
+.marcellus-font-lg {
+    font-family: 'Marcellus', Arial, sans-serif;
+    font-size: calc((24/1920) * 100vw);
+}
+
+.marcellus-font-xl {
+    font-family: 'Marcellus', Arial, sans-serif;
+    font-size: calc((30/1920) * 100vw);
+}
+
+@media screen and (max-width: 1399.98px) { 
+  .guest-copies p:first-of-type {
+    letter-spacing: 6px;
+    margin-bottom: 1rem;
+  }
+  .guest-copies p:not(:first-of-type) {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  .guest-copy1 {
+    letter-spacing: 2px;
+  }
+  .heading1 {
+    transform: translate(-50%, -50%);
+  }
+  .footer1 {
+    top: 10%;
+  }
+  .footer2 {
+    transform: translate(-50%, -50%);
+    top: 20%;
+  }
+}
+
+/* @media screen and (max-width: 1023.98px) { 
+  .marcellus-font-sm {
+    font-size: calc((16/1024) * 100vw);
+  }
+  .marcellus-font-md {
+      font-size: calc((18/1024) * 100vw);
+  }
+  .marcellus-font-lg {
+      font-size: calc((24/1024) * 100vw);
+  }
+  .marcellus-font-xl {
+      font-size: calc((30/1024) * 100vw);
+  }
+  .heading1 {
+    width: calc((470/1024) * 100vw);
+  }
+  .heading2 {
+    width: calc((379/1024) * 100vw);
+  }
+  .date {
+    width: calc((455/1024) * 100vw);
+  }
+  .footer1 {
+    width: calc((512/1024) * 100vw);
+  }
+  .footer2 {
+    width: calc((494/1024) * 100vw);
+  }
+  .circle {
+    width: calc((857/1024) * 100vw)
+  }
+  .logo {
+    width: calc((280/1024) * 100vw);
+  }
+} */
+
+@media screen and (max-width: 991.98px) { 
+  .marcellus-font-sm {
+    font-size: calc((16/1400) * 100vw);
+  }
+  .marcellus-font-md {
+      font-size: calc((18/1400) * 100vw);
+  }
+  .marcellus-font-lg {
+      font-size: calc((24/1400) * 100vw);
+  }
+  .marcellus-font-xl {
+      font-size: calc((30/1400) * 100vw);
+  }
+  .heading1 {
+    width: calc((470/1400) * 100vw);
+  }
+  .heading2 {
+    width: calc((379/1400) * 100vw);
+  }
+  .date {
+    width: calc((455/1400) * 100vw);
+  }
+  .footer1 {
+    width: calc((512/1400) * 100vw);
+  }
+  .footer2 {
+    width: calc((494/1400) * 100vw);
+  }
+  .circle {
+    width: calc((857/1400) * 100vw)
+  }
+  .logo {
+    width: calc((280/1400) * 100vw);
+  }
+}
+
+@media screen and (max-width: 767.98px) { 
+  .marcellus-font-sm {
+    font-size: calc((16/1200) * 100vw);
+  }
+  .marcellus-font-md {
+      font-size: calc((18/1200) * 100vw);
+  }
+  .marcellus-font-lg {
+      font-size: calc((24/1200) * 100vw);
+  }
+  .marcellus-font-xl {
+      font-size: calc((30/1200) * 100vw);
+  }
+  .heading1 {
+    width: calc((470/1200) * 100vw);
+  }
+  .heading2 {
+    width: calc((379/1200) * 100vw);
+  }
+  .date {
+    width: calc((455/1200) * 100vw);
+  }
+  .footer1 {
+    width: calc((512/1200) * 100vw);
+    top: 0;
+  }
+  .footer2 {
+    width: calc((494/1200) * 100vw);
+    top: 10%;
+  }
+  .circle {
+    width: calc((857/1200) * 100vw)
+  }
+  .logo {
+    width: calc((280/1200) * 100vw);
+  }
+}
