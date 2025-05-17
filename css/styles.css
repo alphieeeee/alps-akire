@@ -259,6 +259,24 @@ h1, h2, h3, h4, h5, h6,
     font-size: calc((30/1920) * 100vw);
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.arrow-down {
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid #2454a8;
+  border-bottom: 2px solid #2454a8;
+  transform: rotate(45deg);
+}
+
 @media screen and (max-width: 1399.98px) { 
   .guest-copies p:first-of-type {
     letter-spacing: 6px;
@@ -374,5 +392,14 @@ h1, h2, h3, h4, h5, h6,
   }
   .guest-copy5 {
     max-width: 76%;
+  }
+  .scroll-indicator {
+    bottom: 20px;
+    right: 20px;
+    gap: 3px;
+  }
+  .arrow-down {
+    width: 12px;
+    height: 12px;
   }
 }

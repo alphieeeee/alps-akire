@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(['.alps-container', '.ampersand', '.akire-container'], { opacity: 0 });
     gsap.set('.circle', { opacity: 0, scale: 0.5, rotation: -360 });
     gsap.set('.ring', { opacity: 0, scale: 3 });
-    gsap.set(['.heading1', '.heading2', '.ring', '.date', '.footer1', '.footer2'], { opacity: 0 });
+    gsap.set(['.heading1', '.heading2', '.ring', '.date', '.footer1', '.footer2', '.scroll-indicator'], { opacity: 0 });
     
     alpsAkiTL
     .to('.circle', { duration: 0.8, opacity: 1, scale: 1, rotation: 0 })
@@ -33,12 +33,46 @@ document.addEventListener("DOMContentLoaded", () => {
     .to('.date', { duration: 0.5, opacity: 1 }, '-=0.25')
     .to('.footer1', { duration: 0.5, opacity: 1 }, '-=0.25')
     .to('.footer2', { duration: 0.5, opacity: 1 }, '-=0.25')
+    .to('.scroll-indicator', { duration: 0.3, opacity: 1 }, '-=0.3')
+
+    // gsap.to('.scroll-indicator', { duration: 0.3, opacity: 1, ease: 'sine.inOut' })
+
+    // Create infinite arrow animation
+    gsap.to('.arrow-down', {
+        yPercent: 30,
+        duration: 1.2,
+        stagger: 0.2,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1
+    });
+
+    // Control arrow visibility on scroll
+    ScrollTrigger.create({
+        start: 'top top',
+        end: '+=50%',
+        onEnter: () => {
+            gsap.to('.scroll-indicator', {
+                opacity: 0,
+                duration: 0.3,
+                ease: 'sine.inOut'
+            });
+        },
+        onLeaveBack: () => {
+            gsap.to('.scroll-indicator', {
+                opacity: 1,
+                duration: 0.3,
+                ease: 'sine.inOut'
+            });
+        }
+    });
 
     const heroTL = gsap.timeline({ paused: true, delay: 1, defaults: { ease: 'sine.inOut' } });
     
     heroTL
     .to(['.hero-content'], { duration: 1, scale: 2 })
     .to(['.hero-content'], { duration: 1, opacity: 0 }, '-=0.8')
+    .to('.scroll-indicator', { duration: 0.3, opacity: 0 }, '<');
 
     const heroEnterST = ScrollTrigger.create({
         trigger: '#hero',
