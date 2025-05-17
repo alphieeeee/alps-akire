@@ -22,28 +22,29 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(['.alps-container', '.ampersand', '.akire-container'], { opacity: 0 });
     gsap.set('.circle', { opacity: 0, scale: 0.5, rotation: -360 });
     gsap.set('.ring', { opacity: 0, scale: 3 });
+    gsap.set(['.heading1', '.heading2', '.ring', '.date', '.footer1', '.footer2'], { opacity: 0 });
     
     alpsAkiTL
     .to('.circle', { duration: 0.8, opacity: 1, scale: 1, rotation: 0 })
     .to('.ring', { duration: 0.8, opacity: 1, scale: 1 }, '<')
     .to(['.circle', '.alps-container', '.ampersand', '.akire-container', '.butterflies1'], { duration: 0.8, opacity: 1 }, '<0.4')
+    .to('.heading1', { duration: 0.5, opacity: 1 }, '-=0.25')
+    .to('.heading2', { duration: 0.5, opacity: 1 }, '-=0.25')
+    .to('.date', { duration: 0.5, opacity: 1 }, '-=0.25')
+    .to('.footer1', { duration: 0.5, opacity: 1 }, '-=0.25')
+    .to('.footer2', { duration: 0.5, opacity: 1 }, '-=0.25')
 
     const heroTL = gsap.timeline({ paused: true, delay: 1, defaults: { ease: 'sine.inOut' } });
-    gsap.set(['.heading1', '.heading2', '.ring', '.date', '.footer1', '.footer2'], { opacity: 0 });
+    
     heroTL
-    .to('.heading1', { duration: 0.5, opacity: 1 })
-    .to('.heading2', { duration: 0.5, opacity: 1 })
-    .to('.date', { duration: 0.5, opacity: 1 })
-    .to('.footer1', { duration: 0.5, opacity: 1 })
-    .to('.footer2', { duration: 0.5, opacity: 1 })
     .to(['.hero-content'], { duration: 1, scale: 2 })
     .to(['.hero-content'], { duration: 1, opacity: 0 }, '-=0.8')
 
     const heroEnterST = ScrollTrigger.create({
         trigger: '#hero',
         animation: heroTL,
-        start: 'top top',
-        end: '+=100%',
+        start: 'clamp(top 2%)',
+        end: '+=50%',
         scrub: true,
         pin: true,
         pinSpacing: true,

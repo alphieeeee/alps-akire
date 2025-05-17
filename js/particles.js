@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx = canvas.getContext('2d');
     let particles = [];
     const isMobile = window.innerWidth <= 768;
-    const particleCount = isMobile ? 30 : 60; // Adjust count for mobile
+    const particleCount = isMobile ? 50 : 80; // Adjust count for mobile
 
     function resizeCanvas() {
         // Handle device pixel ratio for crisp rendering
